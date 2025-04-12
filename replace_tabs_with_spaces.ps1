@@ -1,0 +1,1 @@
+powershell -Command "Get-Content your_file.py -replace '\t', ' ' "*your_file.py"
