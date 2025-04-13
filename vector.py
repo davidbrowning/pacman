@@ -5,6 +5,7 @@ class Vector2(object):
         self.x = x
         self.y = y
         self.thresh = 0.000001
+
     def __add__(self, other):
         return Vector2(self.x + other.x, self.y + other.y)
 
@@ -31,6 +32,12 @@ class Vector2(object):
                 return True
         return False
 
+    def magnitudeSquared(self):
+        return self.x**2 + self.y**2
+
+    def magnitude(self):
+        return math.sqrt(self.magnitudeSquared())
+
     def copy(self):
         return Vector2(self.x, self.y)
 
@@ -40,7 +47,7 @@ class Vector2(object):
     def asInt(self):
         return int(self.x), int(self.y)
 
+
     def __str__(self):
         return "<"+str(self.x)+", "+str(self.y)+">"
-
 

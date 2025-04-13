@@ -1,1 +1,5 @@
-powershell -Command "Get-Content your_file.py -replace '\t', ' ' "*your_file.py"
+(Get-Content nodes.py).Replace("`t","    ")
+(Get-Content pacman.py).Replace("`t","    ")
+(Get-Content run.py).Replace("`t","    ")
+(Get-Content vector.py).Replace("`t","    ")
+(Get-Content constants.py).Replace("`t","    ")
